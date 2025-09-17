@@ -5,7 +5,6 @@
 │   ├── README.md
 │   ├── RELEASE_CHECKLIST.md
 │   └── ROADMAP.md
-├── folder-structure.txt
 ├── inc
 │   ├── Satori_Audit_V373.php
 │   ├── satori-restrict-risky-plugins.php
@@ -25,4 +24,4 @@
 │       └── sabberworm
 └── satori-audit.php
 
-9 directories, 17 files
+9 directories, 16 files
