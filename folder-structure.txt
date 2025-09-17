@@ -1,0 +1,28 @@
+.
+├── docs
+│   ├── CHANGELOG.md
+│   ├── CONTRIBUTING.md
+│   ├── README.md
+│   ├── RELEASE_CHECKLIST.md
+│   └── ROADMAP.md
+├── folder-structure.txt
+├── inc
+│   ├── Satori_Audit_V373.php
+│   ├── satori-restrict-risky-plugins.php
+│   └── z-satori-audit-v374-delta-fixed.php
+├── readme.txt
+├── satori-audit-lib
+│   ├── AUTHORS.md
+│   ├── LICENSE.LGPL
+│   ├── README.md
+│   ├── VERSION
+│   ├── autoload.inc.php
+│   └── vendor
+│       ├── autoload.php
+│       ├── composer
+│       ├── dompdf
+│       ├── masterminds
+│       └── sabberworm
+└── satori-audit.php
+
+9 directories, 17 files
