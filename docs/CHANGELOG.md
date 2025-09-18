@@ -4,10 +4,12 @@
 
 ### Fixed
 
-- **Audit JSON export now refreshes live** when using _Run Audit Now_ (was previously stale).
-- Added **timestamp persistence** (`satori_audit_v3_json_last_generated`) using `wp_date()`.
-- Added **admin notices** after manual run (info: “Last generated at …”, success: “JSON export refreshed successfully.”).
-- Injected **Audit Log entry** (“Audit JSON refreshed”) for traceability.
+- **Audit JSON export now refreshes live** when using _Run Audit Now_ (previously stale).
+- Added **timestamp persistence** (`satori_audit_v3_json_last_generated`) using WordPress timezone (`wp_date()`).
+- Added **admin notices** after manual run:
+  - Blue info: _“Last generated at …”_
+  - Green success: _“JSON export refreshed successfully.”_
+- Injected **Audit Log entry** (_Audit JSON refreshed_) for traceability.
 
 ### Changed
 
@@ -15,23 +17,25 @@
 
 ### Known Issues
 
-- `plugin_version` inside the JSON still reports `3.7.3` (will align in the upcoming **3.7.5** when we fold the patch into core).
+- The `plugin_version` inside the Audit JSON still reports `3.7.3`.
+  This will be aligned in the upcoming **3.7.5** release when we fold the patch into core.
 
 ## [3.7.4] - 2025-09-02 (planned)
 
 ### Added
 
-- Weekly label style toggle (calendar vs ordinal)
-- Optional PDF “ordinal week” labels (Wk1–Wk5)
+- Weekly label style toggle (calendar vs ordinal).
+- Optional PDF “ordinal week” labels (Wk1–Wk5).
 
 ### Changed
 
-- Table width manager: tighter cell padding on PDF
+- Table width manager: tighter cell padding on PDF.
 
 ### Fixed
 
-- Edge case where a single-week change showed both date and week label
-  All notable changes to **Satori Audit (mu-plugin)** will be documented in this file.
+- Edge case where a single-week change showed both date and week label.
+
+All notable changes to **Satori Audit (mu-plugin)** will be documented in this file.
 
 ## [3.7.3] - 2025-09-02
 
