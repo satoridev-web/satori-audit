@@ -10,8 +10,14 @@ This checklist is to be followed for every tagged release to ensure quality and 
   - `satori-audit.php` header
   - `docs/CHANGELOG.md`
   - Any Tech Briefs if updated
-- [ ] Ensure `ROADMAP.md` reflects current priorities.
+- [ ] Ensure `docs/ROADMAP.md` is updated to reflect:
+  - Recently delivered items (latest release).
+  - Upcoming milestones (next planned release).
+- [ ] Confirm `ROADMAP.md` and `PROGRESS-REPORTS/` folder are consistent.
+- [ ] Ensure `docs/RELEASE_CHECKLIST.md` itself is current.
 - [ ] Confirm DOMPDF packaged ZIP is still valid and functional.
+- [ ] **Cross-check that `docs/CHANGELOG.md` matches the intended GitHub Release draft**
+      (section titles, fixes, improvements, Known Issues).
 
 ---
 
@@ -52,5 +58,7 @@ This checklist is to be followed for every tagged release to ensure quality and 
   - Title = version + summary
   - Copy notes from `CHANGELOG.md` (formatting preserved)
   - Mention any **Known Issues**.
+- [ ] **Verify GitHub Releases page is published with matching notes**
+      (ensure formatting, Known Issues, and roadmap links are correct).
 - [ ] Notify internal team (Slack/Email).
 - [ ] Archive exported samples for record-keeping.
