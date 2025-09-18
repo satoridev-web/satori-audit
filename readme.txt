@@ -1,7 +1,5 @@
 # SATORI Audit Plugin
 
-# SATORI Audit Plugin
-
 ![Version](https://img.shields.io/badge/version-3.7.4.8-blue.svg)
 ![WordPress](https://img.shields.io/badge/WordPress-6.8%2B-green.svg)
 ![PHP](https://img.shields.io/badge/PHP-8.1%2B-purple.svg)
