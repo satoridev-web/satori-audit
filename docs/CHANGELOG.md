@@ -1,18 +1,21 @@
 # CHANGELOG
 
-## [3.7.4.9] – 2025-09-18
+## [3.7.4.9] - 2025-09-18
 
 ### Fixed
 
-- **Audit JSON export now refreshes live** when using _Run Audit Now_ (previously remained stale).
-- Added **timestamp persistence** (`satori_audit_v3_json_last_generated`) with WP timezone support.
-- Added **admin notice**: shows “Last generated at …” after manual run.
-- Injected **log entry** (“Audit JSON refreshed”) into Audit Log for traceability.
+- **Audit JSON export now refreshes live** when using _Run Audit Now_ (was previously stale).
+- Added **timestamp persistence** (`satori_audit_v3_json_last_generated`) using `wp_date()`.
+- Added **admin notices** after manual run (info: “Last generated at …”, success: “JSON export refreshed successfully.”).
+- Injected **Audit Log entry** (“Audit JSON refreshed”) for traceability.
 
 ### Changed
 
-- Updated `satori-audit.php` bootstrap to conditionally include new patch file
-  (`inc/z-satori-audit-json-refresh.php`).
+- Updated `satori-audit.php` bootstrap to conditionally load `inc/z-satori-audit-json-refresh.php`.
+
+### Known Issues
+
+- `plugin_version` inside the JSON still reports `3.7.3` (will align in the upcoming **3.7.5** when we fold the patch into core).
 
 ## [3.7.4] - 2025-09-02 (planned)
 
